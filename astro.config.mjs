@@ -11,5 +11,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: 'https://greezybob.github.io',
+  site: 'https://breathesea.com',
 });
