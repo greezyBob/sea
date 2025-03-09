@@ -3,20 +3,27 @@ import diamonds from "../assets/diamonds.png"
 import "../styles/global.css";
 ---
 
-<div>
-	<main class="flex flex-col gap-y-6">
-		<section class="flex bg-amber-200">
-      <div class="">Sea</div>
+<div class="w-full md:w-auto h-full">
+	<main class="flex flex-col gap-y-6 w-full flex-1">
+		<section class="flex flex-col md:flex-row">
+      <h1 class="">Sea</h1>
       <div class="grow"></div>
-      <div>Some other text</div>
+      <div>Nurture your sound.</div>
 		</section>
     <section id="hero">
-      <img src={diamonds.src} alt="" class="rounded-lg  ">
+      <div class="relative w-full overflow-x-visible grow">
+        <img src={diamonds.src}
+             class="" 
+             alt="Responsive Image" />
+      </div>
 		</section>
-    <section id="email" class="bg-amber-600">
-      <form action="/submit_email" method="post">  <label for="email">Email:</label>
-        <input type="email" id="email" name="email" class="bg-blue-300" required>
-        <button type="submit" value="Submit">
+    <section id="email" class="flex justify-center">
+      <form action="/submit_email" method="post">
+        <div class="flex flex-col gap-y-3">
+          <input type="text" placeholder="Enter your email" class=" px-4 py-1 border border-gray-300 rounded-md text-center placeholder-gray-500">
+        <button class="cursor-pointer px-6 py-2 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-100 active:bg-blue-200 transition">
+          Get early access
+        </button>   </div>      
       </form>
 		</section>
 	</main>
