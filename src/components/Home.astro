@@ -4,18 +4,18 @@ import cloudMobile from '../assets/cloudsMobile.jpeg'
 import '../styles/global.css'
 ---
 
-<div class="w-full h-full pt-4 md:px-30 md:pt-10">
+<div class="w-full h-full pt-8 md:px-30 md:pt-10">
   <main
-    class="flex flex-col gap-y-2 w-full h-full justify-between md:justify-center md:gap-y-4"
+    class="flex flex-col w-full md:h-full h-[90%] md:justify-center gap-y-4"
   >
-    <section class="flex flex-col md:flex-row pb-2">
+    <section class="flex flex-col md:flex-row ">
       <h1 class="font-bold text-5xl">Sea</h1>
       <div class="grow"></div>
       <div class="flex flex-col justify-end">
         <span class="">Nurture your sound.</span>
       </div>
     </section>
-    <section class="grow md:flex-none">
+    <section class="md:flex-none">
       <img
         src={cloud.src}
         class="h-full object-cover md:rounded-lg w-full hidden md:block"
@@ -23,15 +23,12 @@ import '../styles/global.css'
       />
       <img
         src={cloudMobile.src}
-        class="h-full w-full md:rounded-lg md:hidden"
+        class="w-full md:rounded-lg md:hidden"
         alt="Responsive Image"
       />
     </section>
     <section id="email" class="flex justify-center">
-      <form
-        id="contact-form"
-        action="https://forms.gle/ied5rhCctmgQxsLV6"
-      >
+      <form id="contact-form" action="https://forms.gle/ied5rhCctmgQxsLV6">
         <button
           type="submit"
           class="cursor-pointer px-4 py-1 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-100 active:bg-blue-200 transition"
