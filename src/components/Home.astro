@@ -1,0 +1,47 @@
+---
+import cloud from '../assets/clouds.jpeg'
+import cloudMobile from '../assets/cloudsMobile.jpeg'
+import '../styles/global.css'
+---
+
+<div class="w-full h-full pt-4 md:px-30 md:pt-10">
+  <main
+    class="flex flex-col gap-y-2 w-full h-full justify-between md:justify-center md:gap-y-4"
+  >
+    <section class="flex flex-col md:flex-row pb-2">
+      <h1 class="font-bold text-5xl">Sea</h1>
+      <div class="grow"></div>
+      <div class="flex flex-col justify-end">
+        <span class="">Nurture your sound.</span>
+      </div>
+    </section>
+    <section class="grow md:flex-none">
+      <img
+        src={cloud.src}
+        class="h-full object-cover md:rounded-lg w-full hidden md:block"
+        alt="Responsive Image"
+      />
+      <img
+        src={cloudMobile.src}
+        class="h-full w-full md:rounded-lg md:hidden"
+        alt="Responsive Image"
+      />
+    </section>
+    <section id="email" class="flex justify-center">
+      <form action="/submit_email" method="post">
+        <div class="flex flex-col gap-y-2 md:gap-y-3">
+          <input
+            type="text"
+            placeholder="Enter your email"
+            class="px-4 py-1 border border-gray-300 rounded-md text-center placeholder-gray-500"
+          />
+          <button
+            class="cursor-pointer px-4 py-1 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-100 active:bg-blue-200 transition"
+          >
+            Get early access
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+</div>
